@@ -39,12 +39,10 @@ local-voice-ai-agent/
 
 ### 1. Open WSL terminal
 
-wsl -d Ubuntu
+* wsl -d Ubuntu
 
-cd ~/local-voice-ai-agent
+* cd local-voice-ai-agent
 ````
-
----
 
 ### 2. Create virtual environment
 
@@ -76,7 +74,7 @@ Then run:
 ```bash
 ollama run gemma3:1b
 ```
-
+ollama run gemma3:4b (the advanced version)
 ---
 
 ### 5. Start Kokoro TTS server
@@ -115,7 +113,7 @@ python local_voice_chat_advanced.py
 
 ```bash
 python rag_setup.py
-python local_voice_chat_rag.py
+'python local_voice_chat_rag.py'
 ```
 
 ---
@@ -146,7 +144,8 @@ python local_voice_chat_rag.py
 * 🔗 ROS2 / Isaac Sim integration
 * ⚡ Latency optimization
 * 🤖 Real robot interaction
-* 🧠 Smarter dialogue handling
+* 🧠 Smarter dialogue handling / Multimodality
+
 
 ---
 
@@ -170,42 +169,8 @@ Aya El Alaoui Najib
 
 # ⚠️ SUPER IMPORTANT (WSL SPECIFIC)
 
-Tell your colleague this (you can add in message):
 
 👉 If audio doesn’t work:
 - WSL microphone access can be tricky  
-- He may need to run on **Windows Python instead**
+- you may need to run on **Windows Python instead**
 
----
-
-# 💬 Message you send with it
-
-Keep it simple:
-
-> Hi,  
-> I’m sharing the local voice AI system for the robot.  
-> It’s fully local (STT → LLM → TTS) and runs on WSL/Linux.  
-> Setup and usage are in the README.  
->  
-> Let me know if you want me to walk you through it.
-
----
-
-# 🧠 Real tip (important for YOU)
-
-Since you’re working in:
-👉 **WSL + local AI + robotics**
-
-You are literally doing:
-- system integration
-- AI pipeline engineering
-- deployment constraints
-
-👉 That’s NOT beginner level anymore
-
----
-
-If you want next:
-👉 I can help you make it **plug directly into ROS later**  
-👉 or fix your **LLM timeout problem cleanly**
-```
